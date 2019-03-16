@@ -1,3 +1,350 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+html {
+	background-color: black;
+}
+
+.container {
+	/* border: 1px solid black; */
+	margin: 0 10%;
+	padding: 0 6%;
+	height: auto;
+	background-color: white;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+}
+
+.main-container {
+    /* border: 1px solid red; */
+    display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 77px;
+	background-color: rgb(61, 61, 141);
+}
+
+.main-links {
+	/* border: 1px solid black; */
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 70%;
+}
+
+.main-links a {
+	text-decoration: none;
+	color: rgb(165, 164, 164);
+	text-align: center;
+	font-size: 14px;
+}
+
+.header-pic {
+    /* border: 1px solid black; */
+	display: flex;
+    flex-flow: row wrap;
+    width: 25%;
+} 
+
+.logo {
+    width: 100%;
+}
+
+.main-header {
+	/* border: 1px solid black; */
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: center;
+	margin-top: 70px;
+	margin-bottom: 90px;
+	width: 100%;
+	height: auto;
+}
+
+h1 {
+	text-align: center;
+	font-size: 80px;
+	/* font-stretch: ultra-condensed; */
+	
+}
+
+.main-header div {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: center;
+	flex-grow: 3;
+	/* border: 1px solid black; */
+	width: 50%;
+	padding: 5% 0;
+}
 
 
+button {
+	background-color: white;
+	border: 1px solid black;
+	text-align: center;
+	/* padding: 0 40px; */
+	font-size: 18px;
+	font-family: 'Titillium Web', sans-serif;
+	height: 35px;
+	width: 170px;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.main-header img {
+	/* border: 1px solid black; */
+	flex-grow: 1;
+	width: 43%;
+}
+
+h3 a {
+	text-decoration: none;
+	color: black;
+}
+
+.top-half {
+	border-top: 1px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+	padding-top: 4%;
+	width: 100%;
+}
+
+@media(max-width: 500) {
+    
+}
+
+.content1 {
+	/* border: 1px solid black; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+	width: 50%;
+}
+@media(max-width: 500) {
+    
+}
+
+
+.middle-img {
+	width: 100%;
+	margin: 3% 0;
+}
+
+.bot-half {
+	border-bottom: 1px solid black;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: center;
+	padding-bottom: 4%;
+	width: 100%;
+}
+
+.content2 {
+	/* border: 1px solid black; */
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: center;
+	width: 33%;
+}
+
+ 
+.end-content {
+    /* border: 1px solid black;  */
+    padding-bottom: 5%;
+} 
+
+address {
+	margin: 20px 0;
+}
+
+address a {
+	text-decoration: none;
+	color: black;
+}
+
+.copyright {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+    padding-top: 40px;
+	font-size: 14px;
+}
+
+/* ========================Media Queries @800px========================= */
+
+@media(max-width: 800px) {
+    .container {
+        margin: 0 auto;
+        padding: 0 3%;
+        width: 100%;
+    }
+    .main-container {
+        flex-flow: wrap-reverse;
+        } 
+    .main-links {
+        width: 100%;
+        padding: 0 10px;
+        background-color: rgb(61, 61, 141);
+    }
+    .header-pic {
+        width: 100%;
+        justify-content: space-around
+    }
+    .main-header img {
+        display: none;
+    }
+    .top-half {
+        border-top: 2px solid black;
+    }
+    .content1 {
+        padding-right: 1%
+    }
+    .bot-half{
+        border-bottom: 2px solid black;
+    }
+    .content2 {
+        padding-right: 4%
+    }
+
+}
+
+/* ========================Media Queries @500px========================= */
+@media(max-width: 500px) {
+    .container{
+        padding: 0;
+    } 
+    .main-container {
+        position: static;
+        flex-flow: column wrap-reverse;
+        height: auto;
+        background-color: white;
+    }
+    .main-links {
+        width: 100%;
+        background-color: white;
+        justify-content: center;
+        padding: 0;
+        height: auto;
+    }
+    .main-links a {
+        border: 1px solid black;
+        border-top: 0;
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+        padding-top: 3%;
+    }
+    .header-pic {
+        border-bottom: 1px solid black;
+        width: 100%;
+        order: -1;
+        padding: 4% 0;
+    }
+    .mobile {
+        /* border: 2px solid black; */
+        padding: 0 3%;
+    }
+    .top-half {
+        flex-direction: column;
+        padding-top: 5%;
+    }
+    .content1 {
+        width: 100%;
+        margin: 5% 0;
+    }
+    .bottom-half {
+        flex-direction: column;
+        padding-top: 5%;
+    }
+    .content2 {
+        width: 100%;
+        margin: 5% 0;
+    }
+
+
+
+
+
+}
